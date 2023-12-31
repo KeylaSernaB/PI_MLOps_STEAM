@@ -241,7 +241,7 @@ async def user(id: str):
     """
     try:
         # Lectura del DataFrame
-        df_recomendaciones = pd.read_csv("Modelo_ML/recomendacion_item_item.csv")
+        df_recomendaciones = pd.read_csv("Api/recomendacion_item_item.csv")
 
         # Convertir el ID de cadena a número
         id_num = int(id)
@@ -276,7 +276,7 @@ async def user(user_id: str):
 
     try:
         # Leer el DataFrame de recomendaciones desde el archivo CSV
-        df_recomendaciones = pd.read_csv("Modelo_ML/recomendacion_user_item.csv")
+        df_recomendaciones = pd.read_csv("Api/recomendacion_user_item.csv")
         
         # Filtrar el DataFrame para obtener solo las filas correspondientes al usuario dado
         usuario_filtro = df_recomendaciones[df_recomendaciones['user_id'] == user_id]
