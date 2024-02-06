@@ -73,7 +73,7 @@ Realicé el análisis exploratorio de datos (EDA). Durante este proceso, se expl
 
 ### **Video Explicativo**
 Creé un video explicativo del proyecto y detallando el uso de los endpoints desplegados en la plataforma Render.
-[Video]().
+[Video](https://drive.google.com/drive/folders/1j2BBw6qCb5XKLcGXQwJ9W6IWJCvRMASn?usp=sharing).
 
 
 
