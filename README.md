@@ -68,11 +68,9 @@ Realicé el análisis exploratorio de datos (EDA). Durante este proceso, se expl
 
 ### **Sistema de recomendación**
 
-- **Sistema de Recomendación ítem-ítem:** Modelo que recomienda juegos similares en función de un juego dado. Se utilizó la similitud del coseno como métrica principal para establecer la relación entre juegos.[Notebook] 
-#agregar 9
+- **Sistema de Recomendación ítem-ítem:** Modelo que recomienda juegos similares en función de un juego dado. Se utilizó la similitud del coseno como métrica principal para establecer la relación entre juegos.[Notebook](https://github.com/KeylaSernaB/PI_MLOps_STEAM/blob/main/9.sistema_recomendacion.ipynb)
 
-- **Sistema de Recomendación usuario-ítem:** Modelo que recomienda juegos a un usuario basándose en las preferencias de otros usuarios similares.[Notebook]
-#agregar 10
+- **Sistema de Recomendación usuario-ítem:** Modelo que recomienda juegos a un usuario basándose en las preferencias de otros usuarios similares.[Notebook](https://github.com/KeylaSernaB/PI_MLOps_STEAM/blob/main/10.sistema_recomendacion_user_item.ipynb)
 
 ### **Video Explicativo**
 Creé un video explicativo del proyecto y detallando el uso de los endpoints desplegados en la plataforma Render.
