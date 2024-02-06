@@ -64,7 +64,6 @@ Se implementó una API utilizando FastApi para exponer las funciones de consulta
 ### **Análisis Exploratorio de Datos (EDA)**
 Realicé el análisis exploratorio de datos (EDA). Durante este proceso, se exploraron y examinaron  los conjuntos de datos. 
 [Notebook]().
-#agregar 8
 
 ### **Sistema de recomendación**
 
