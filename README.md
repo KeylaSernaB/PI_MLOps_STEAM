@@ -7,7 +7,9 @@
 </p>
 
 ## Descripción del Proyecto
-Este proyecto simula el rol como Data Scientist en Steam, una plataforma multinacional de videojuegos. Para su desarrollo, se entregan unos datos y se solicita un Producto Mínimo Viable que muestre una API deployada en un servicio en la nube y la aplicación de dos modelos de Machine Learning, por una lado, un análisis de sentimientos sobre los comentarios de los usuarios de los juegos y, por otro, la recomendación de juegos a partir de dar el nombre de un juego y/o a partir de los gustos de un usuario en particular.
+En este proyecto se ha trabajado con tres conjuntos de datos en formato JSON, los cuales presentan una estructura anidada. Se ha extraído información para la creación de un sistema de recomendación a través de un proceso de ETL (Extracción, Transformación y Carga).
+
+El objetivo es desarrollar un sistema de recomendación de juegos utilizando los conjuntos de datos proporcionados. Abordaremos todas las fases clave de Data Engineering desde la preparación de datos (ETL) hasta el análisis exploratorio y la implementación del modelo.
 
 ## Datos
 
@@ -20,7 +22,7 @@ Para este proyecto se proporcionaron tres archivos JSON:
 * **output_steam_games.json** es un dataset que contiene datos relacionados con los juegos en sí, como los título, el desarrollador, los precios, características técnicas, etiquetas, entre otros datos.
 
 ## **Fuente de datos**
-+ [Dataset](https://drive.google.com/drive/folders/1HqBG2-sUkz_R3h1dZU5F2uAzpRn7BS) se encuetran el archivo que ha sido procesado.
++ [Dataset](https://drive.google.com/drive/folders/1HqBG2-sUkz_R3h1dZU5F2uAzpRn7BSpj) se encuetran el archivo que ha sido procesado.
 + [Diccionario de datos](https://docs.google.com/spreadsheets/d/1-t9HLzLHIGXvliq56UE_gMaWBVTPfrlTf2D9uAtLGrk/edit?usp=drive_link): Diccionario con algunas descripciones de las columnas disponibles en el dataset.<br/> 
 
 ## Tareas desarrolladas  <br />
@@ -61,7 +63,16 @@ Se implementó una API utilizando FastApi para exponer las funciones de consulta
 
 ### **Análisis Exploratorio de Datos (EDA)**
 Realicé el análisis exploratorio de datos (EDA). Durante este proceso, se exploraron y examinaron  los conjuntos de datos. 
-[Notebook del Análisis Exploratorio de Datos (EDA)]().
+[Notebook]().
+#agregar 8
+
+### **Sistema de recomendación**
+
+- **Sistema de Recomendación ítem-ítem:** Modelo que recomienda juegos similares en función de un juego dado. Se utilizó la similitud del coseno como métrica principal para establecer la relación entre juegos.[Notebook] 
+#agregar 9
+
+- **Sistema de Recomendación usuario-ítem:** Modelo que recomienda juegos a un usuario basándose en las preferencias de otros usuarios similares.[Notebook]
+#agregar 10
 
 ### **Video Explicativo**
 Creé un video explicativo del proyecto y detallando el uso de los endpoints desplegados en la plataforma Render.
