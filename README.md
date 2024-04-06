@@ -6,7 +6,16 @@
 <img src="https://user-images.githubusercontent.com/67664604/217914153-1eb00e25-ac08-4dfa-aaf8-53c09038f082.png"  height=300>
 </p>
 
-## Descripción del Proyecto
+## 📋 **Tabla de contenidos**
+- [Descripción del Proyecto](#Descripción-del-Proyecto)
+- [Tareas desarrolladas](#Tareas-desarrolladas)
+- [Funciones de consultas](#Funciones-de-consultas)
+- [Desarrollo de API](#Desarrollo-de-API)
+- [Análisis Exploratorio de Datos (EDA)](#Análisis-Exploratorio-de-Datos (EDA))
+- [Sistema de recomendación](#Sistema-de-recomendación)
+- [Video Explicativo](#Video-Explicativo)
+
+## 1. Descripción del Proyecto
 En este proyecto se ha trabajado con tres conjuntos de datos en formato JSON, los cuales presentan una estructura anidada. Se ha extraído información para la creación de un sistema de recomendación a través de un proceso de ETL (Extracción, Transformación y Carga).
 
 El objetivo es desarrollar un sistema de recomendación de juegos utilizando los conjuntos de datos proporcionados. Abordaremos todas las fases clave de Data Engineering desde la preparación de datos (ETL) hasta el análisis exploratorio y la implementación del modelo.
@@ -21,11 +30,11 @@ Para este proyecto se proporcionaron tres archivos JSON:
 
 * **output_steam_games.json** es un dataset que contiene datos relacionados con los juegos en sí, como los título, el desarrollador, los precios, características técnicas, etiquetas, entre otros datos.
 
-## **Fuente de datos**
+## Fuente de datos
 + [Dataset](https://drive.google.com/drive/folders/1HqBG2-sUkz_R3h1dZU5F2uAzpRn7BSpj) se encuetran el archivo que ha sido procesado.
 + [Diccionario de datos](https://docs.google.com/spreadsheets/d/1-t9HLzLHIGXvliq56UE_gMaWBVTPfrlTf2D9uAtLGrk/edit?usp=drive_link): Diccionario con algunas descripciones de las columnas disponibles en el dataset.<br/> 
 
-## Tareas desarrolladas  <br />
+## 2. Tareas desarrolladas  <br />
 
 ### **ETL (Extracción, Transformación y Carga):** <br />
 Esta primera etapa se centra en extraer los archivos JSON y convertirlos a archivos CSV. Se realiza la desanidación de las columnas, manteniendo solo aquellas necesarias para el sistema de recomendación y los endpoints propuestos. También se lleva a cabo el tratamiento de valores faltantes con el objetivo de dejar los datos limpios y preparados para su uso en los endpoints y el sistema de recomendación.
@@ -36,7 +45,7 @@ Se ha creado la columna 'sentiment_analysis' aplicando análisis de sentimiento 
 
 Para obtener más detalles sobre este proceso se puede consultar la sección correspondiente en el [notebook de análisis de sentimiento](https://github.com/KeylaSernaB/PI_MLOps_STEAM/blob/main/2.%20analisis_sentimientos.ipynb).
 
-### **3.- Funciones de consultas** <br />
+### 3.- Funciones de consultas <br />
 
 - **def PlayTimeGenre( genero : str ):** Debe devolver año con más horas jugadas para dicho género.[Notebook](https://github.com/KeylaSernaB/PI_MLOps_STEAM/blob/main/3.PlayTimeGenre.ipynb)
 
@@ -58,20 +67,20 @@ Ejemplo de retorno: [{"Puesto 1" : X}, {"Puesto 2" : Y},{"Puesto 3" : Z}].
 
 Ejemplo de retorno: {'Valve' : [Negative = 182, Neutral = 120, Positive = 278]}
 
-### **Desarrollo de API**
+### **4. Desarrollo de API**
 Se implementó una API utilizando FastApi para exponer las funciones de consulta como endpoints y tambien se usó Render. El deploy de la API se encuentra en: https://ml-ksb.onrender.com/docs. El código para la API se encuentra en el archivo [main.py](https://github.com/KeylaSernaB/PI_MLOps_STEAM/blob/main/main.py).
 
 ### **Análisis Exploratorio de Datos (EDA)**
 Realicé el análisis exploratorio de datos (EDA). Durante este proceso, se exploraron y examinaron  los conjuntos de datos. 
 [Notebook]().
 
-### **Sistema de recomendación**
+### 5. Sistema de recomendación
 
 - **Sistema de Recomendación ítem-ítem:** Modelo que recomienda juegos similares en función de un juego dado. Se utilizó la similitud del coseno como métrica principal para establecer la relación entre juegos.[Notebook](https://github.com/KeylaSernaB/PI_MLOps_STEAM/blob/main/9.sistema_recomendacion.ipynb)
 
 - **Sistema de Recomendación usuario-ítem:** Modelo que recomienda juegos a un usuario basándose en las preferencias de otros usuarios similares.[Notebook](https://github.com/KeylaSernaB/PI_MLOps_STEAM/blob/main/10.sistema_recomendacion_user_item.ipynb)
 
-### **Video Explicativo**
+### 6. Video Explicativo
 Creé un video explicativo del proyecto y detallando el uso de los endpoints desplegados en la plataforma Render.
 [Video](https://drive.google.com/drive/folders/1j2BBw6qCb5XKLcGXQwJ9W6IWJCvRMASn?usp=sharing).
 
