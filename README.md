@@ -41,11 +41,11 @@ Para este proyecto se proporcionaron tres archivos JSON:
 ## **4. Tareas desarrolladas**
 <br />
 
-### **4.1. ETL (Extracción, Transformación y Carga):** <br />
+### **4.1. ETL (Extracción, Transformación y Carga)** <br />
 Esta primera etapa se centra en extraer los archivos JSON y convertirlos a archivos CSV. Se realiza la desanidación de las columnas, manteniendo solo aquellas necesarias para el sistema de recomendación y los endpoints propuestos. También se lleva a cabo el tratamiento de valores faltantes con el objetivo de dejar los datos limpios y preparados para su uso en los endpoints y el sistema de recomendación.
 El proceso detallado se describe en el [Proceso de ETL](https://github.com/KeylaSernaB/PI_MLOps_STEAM/blob/main/1.%20ETL.ipynb). 
 
-### **4.2. Feature Engineering:** 
+### **4.2. Feature Engineering** 
 Se ha creado la columna 'sentiment_analysis' aplicando análisis de sentimiento a las reseñas de los usuarios mediante la librería NLTK. La asignación de valores es la siguiente: '0' si es una reseña negativa, '1' si es neutral y '2' si es positiva. Esta nueva columna se ha introducido para reemplazar la columna original 'user_reviews.review', facilitando así el trabajo de los modelos de machine learning y el análisis de datos.
 
 Para obtener más detalles sobre este proceso se puede consultar la sección correspondiente en el [notebook de análisis de sentimiento](https://github.com/KeylaSernaB/PI_MLOps_STEAM/blob/main/2.%20analisis_sentimientos.ipynb).
